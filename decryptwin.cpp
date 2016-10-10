@@ -8,7 +8,6 @@ DecryptWin::DecryptWin(QWidget *parent) :
     ui->setupUi(this);
 
     setWindowTitle("PassPath - v.1.1");
-    setWindowIcon(QIcon("./logo5.png"));
 
     fill_combobox();
 
