@@ -11,7 +11,7 @@ I always wanted to use a password for each site, but I always had a bad memory, 
 ![example](http://i.imgur.com/HeLfSWJ.png)
 ![example](http://i.imgur.com/HKK3TwK.png)
 # Donate
-If you like the project and if you want help me, you can donate via Paypal
+If you like the project and if you want help me, you can make a donation with paypal
 
 [![paypal](https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_SM.gif)](https://www.paypal.me/R3J3CT3D)
 # Next features
