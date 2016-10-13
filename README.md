@@ -10,5 +10,9 @@ I always wanted to use a password for each site, but I always had a bad memory, 
 # Images
 ![example](http://i.imgur.com/HeLfSWJ.png)
 ![example](http://i.imgur.com/HKK3TwK.png)
+# Donate
+If you like the project and if you want help me, you can donate [here](paypal.me/R3J3CT3D)
+# Next features
+I am currently working on the android application
 # Download
 You can download PassPath v.1.1 [here](https://github.com/R3J3CT3D/PassPath/releases), only for *Linux* for the moment.
