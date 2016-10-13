@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>DecryptWin</class>
- <widget class="QDialog" name="DecryptWin">
+ <class>MainWindow</class>
+ <widget class="QDialog" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>321</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -161,23 +161,7 @@
     </widget>
    </item>
    <item row="2" column="1">
-    <widget class="QComboBox" name="service_box">
-     <item>
-      <property name="text">
-       <string>GitHub</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>StackOverflow</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>ProtonMail</string>
-      </property>
-     </item>
-    </widget>
+    <widget class="QComboBox" name="service_box"/>
    </item>
    <item row="7" column="1" colspan="2">
     <widget class="QLineEdit" name="confirm_pass_edit">

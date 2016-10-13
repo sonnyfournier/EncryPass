@@ -1,5 +1,5 @@
-#ifndef DECRYPTWIN_H
-#define DECRYPTWIN_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <QDialog>
 #include <QMessageBox>
@@ -8,18 +8,20 @@
 #include <QFile>
 #include <QDialog>
 #include <QInputDialog>
+#include <QDir>
+#include <QSortFilterProxyModel>
 
 namespace Ui {
-class DecryptWin;
+class MainWindow;
 }
 
-class DecryptWin : public QDialog
+class MainWindow : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit DecryptWin(QWidget *parent = 0);
-    ~DecryptWin();
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
     void            fill_combobox();
 
 private slots:
@@ -28,7 +30,8 @@ private slots:
     void            add_service();
 
 private:
-    Ui::DecryptWin *ui;
+    Ui::MainWindow *ui;
+    QString         confPath;
 };
 
-#endif // DECRYPTWIN_H
+#endif // MAINWINDOW_H

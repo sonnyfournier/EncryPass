@@ -1,9 +1,9 @@
 SOURCES += \
     main.cpp \
-    decryptwin.cpp
+    mainwindow.cpp
 
 FORMS += \
-    decryptwin.ui
+    mainwindow.ui
 
 HEADERS += \
-    decryptwin.h
+    mainwindow.h
