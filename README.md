@@ -12,10 +12,13 @@ I always wanted to use a different password for each site, but I always had a ba
 ![example](http://i.imgur.com/HKK3TwK.png)
 # Donate
 If you like the project and if you want help me, you can make a donation with :
+
 Paypal : 
 
 [![paypal](https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_SM.gif)](https://www.paypal.me/R3J3CT3D)
+
 Or with bitcoin : 
+
 ![bitcoin](http://i.imgur.com/dV5yqrR.png)
 # Next features
 I am currently working on the android application
