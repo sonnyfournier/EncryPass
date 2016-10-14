@@ -1,4 +1,4 @@
-# PassPath
+# EncryPass
 Change your password with the same.
 # Synopsis
 PassPath is a tool to always keep the same password and to always have a different.
