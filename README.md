@@ -23,4 +23,4 @@ Or with bitcoin :
 # Next features
 I am currently working on the android application
 # Download
-You can download EncryPass v.1.1 [here](https://github.com/R3J3CT3D/EncryPass/releases), only for *Linux* for the moment.
+You can download EncryPass v.1.2 [here](https://github.com/R3J3CT3D/EncryPass/releases), only for *Linux* for the moment.
