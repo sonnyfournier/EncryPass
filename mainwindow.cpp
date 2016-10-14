@@ -92,7 +92,7 @@ void            MainWindow::encrypt()
 
     if (ui->service_box->currentText().isEmpty() || ui->pass_edit->text().isEmpty())
     {
-        QMessageBox::critical(this, "Error", "Please fill all fields.");
+        QMessageBox::critical(this, "Error", "Please fill all the fields.");
         return;
     }
     if (ui->pass_edit->text() != ui->confirm_pass_edit->text())
