@@ -11,8 +11,9 @@ I always wanted to use a different password for each site, but I always had a ba
 ![example](http://i.imgur.com/HeLfSWJ.png)
 ![example](http://i.imgur.com/HKK3TwK.png)
 # Language and tools
-Tools / App : Qt / Qt Creator / Qt Designer
-Language : C++
+**Tools / App** : Qt / Qt Creator / Qt Designer
+
+**Language** : C++
 # Donate
 If you like the project and if you want help me, you can make a donation with :
 
