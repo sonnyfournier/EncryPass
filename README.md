@@ -17,6 +17,6 @@ Paypal :
 
 [![paypal](https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_SM.gif)](https://www.paypal.me/R3J3CT3D)
 # Next features
-I am currently working on the android application
+I am currently working on the android application, the first version is already [here](https://github.com/R3J3CT3D/EncryPass-Android).
 # Download
 You can download EncryPass v.1.2 [here](https://github.com/R3J3CT3D/EncryPass/releases), only for *Linux* for the moment.
