@@ -19,7 +19,7 @@ I always wanted to use a different password for each site, but I always had a ba
 # Donate
 If you like the project and if you want help me, you can make a donation :
 
-[![paypal](https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_SM.gif)](https://www.paypal.me/R3J3CT3D)
+[![paypal](https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_pp_142x27.png)](https://www.paypal.me/R3J3CT3D)
 # Next features
 I am currently working on the android application, the first version is already [here](https://github.com/R3J3CT3D/EncryPass-Android).
 # Download
