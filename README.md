@@ -13,8 +13,9 @@ I always wanted to use a different password for each site, but I always had a ba
 # Language(s) and tool(s)
 
 |           Tools           | Language  |
-|---------------------------|-----------|
+|:-------------------------:|:---------:|
 | Qt Creator + Qt Designer  |     C++   |
+
 # Donate
 If you like the project and if you want help me, you can make a donation with :
 
