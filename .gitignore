@@ -1,0 +1,6 @@
+# Compilation directories
+EncryPass-*
+
+# Complements
+node_modules
+bootstrap
