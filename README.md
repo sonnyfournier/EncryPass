@@ -12,9 +12,8 @@
 
 <br>
 
-**EncryPass** is an innovative cross-platform application that simplifies secure password generation.
-
-This is based on the Ceasar encryption.
+**EncryPass** is an innovative cross-platform application that simplifies secure password generation. It allow you
+to keep the same password but always different.
 
 <br>
 
@@ -47,6 +46,14 @@ See documentation [here](https://github.com/electron-userland/electron-packager)
 
 <br>
 
+## Screens
+<p align="center">
+  <img src="lel.png?raw=true" alt="" width="100%">
+  <img src="lel.png?raw=true" alt="" width="40%">
+</p>
+
+<br>
+
 ## Status
 This is the first version of EncryPass so currently the features are far away.
 But I work on it everyday.
@@ -55,8 +62,5 @@ If you have any suggestions then please open an issue!
 
 <br/>
 
-## Screens
-<p align="center">
-  <img src="lel.png?raw=true" alt="" width="100%">
-  <img src="lel.png?raw=true" alt="" width="40%">
-</p>
+## Story behind EncryPass
+I always wanted to use a different password for each site, unfortunatly, I always had a bad memory, so I create EncryPass, based on the Caesar encryption which encrypt a main password to generate a new.
