@@ -19,18 +19,19 @@ to keep the same password but always different.
 
 ## Table of content
 
+- [Story](#story)
 - [Downloads](#downloads)
 - [Build](#build)
     - [Tests](#tests)
     - [Build](#builds)
 - [Screenshots](#sreens)
-    - [Extension](#extension)
-    - [Database](#database)
 - [Status](#status)
-    - [Upload the page tree file](#upload-the-page-tree-file)
-    - [Go to the import view](#go-to-the-import-view)
-    - [Import the uploaded page tree file](#import-the-uploaded-page-tree-file)
-- [Story](#story)
+- [Contributors](#contributors)
+
+<br>
+
+## Story
+I always wanted to use a different password for each site, unfortunatly, I always had a bad memory, so I create EncryPass, based on the Caesar encryption which encrypt a main password to generate a new.
 
 <br>
 
@@ -97,5 +98,5 @@ If you have any suggestions then please open an issue!
 
 <br/>
 
-## Story
-I always wanted to use a different password for each site, unfortunatly, I always had a bad memory, so I create EncryPass, based on the Caesar encryption which encrypt a main password to generate a new.
+## Contributors
+Salah
