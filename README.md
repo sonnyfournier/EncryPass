@@ -17,7 +17,25 @@ to keep the same password but always different.
 
 <br>
 
-## Installation
+## Table of content
+
+- [Downloads](#downloads)
+- [Build](#build)
+    - [Tests](#tests)
+    - [Build](#builds)
+- [Screenshots](#sreens)
+    - [Extension](#extension)
+    - [Database](#database)
+- [Status](#status)
+    - [Upload the page tree file](#upload-the-page-tree-file)
+    - [Go to the import view](#go-to-the-import-view)
+    - [Import the uploaded page tree file](#import-the-uploaded-page-tree-file)
+- [Story](#story)
+
+<br>
+
+## Downloads
+
 All prebuilt binaries for all major platforms are available under
 [releases](https://github.com/R3J3CT3D/EncryPass-Desktop/releases/latest).
 
@@ -25,6 +43,8 @@ EncryPass is also available for [Android](https://github.com/R3J3CT3D/EncryPass-
 for [IOS](https://github.com/R3J3CT3D/EncryPass-IOS).
 
 <br>
+
+## Build
 
 If you want, you can also build EncryPass directly from source.
 
@@ -36,13 +56,22 @@ Go into the cloned directory
 ```bash
 $ cd EncryPass-Desktop
 ```
-If you want test EncryPass before build it run
+
+### Tests
+
+Run the project
 ```bash
 $ sudo npm start
 ```
-To build, use **electron-packager**
 
+To build, use **electron-packager**
 See documentation [here](https://github.com/electron-userland/electron-packager).
+
+### Builds
+
+```bash
+$ electron-packager .
+```
 
 <br>
 
@@ -62,5 +91,5 @@ If you have any suggestions then please open an issue!
 
 <br/>
 
-## Story behind EncryPass
+## Story
 I always wanted to use a different password for each site, unfortunatly, I always had a bad memory, so I create EncryPass, based on the Caesar encryption which encrypt a main password to generate a new.
