@@ -8,9 +8,10 @@
 */
 
 form {
+	width: 380px;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #cccccc;
     background-color: #FDFDFD;
     padding-bottom: 40px;
