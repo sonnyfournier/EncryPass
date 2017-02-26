@@ -48,6 +48,8 @@ for [IOS](https://github.com/R3J3CT3D/EncryPass-IOS).
 
 If you want, you can also build EncryPass directly from source.
 
+<br>
+
 First, clone the repository
 ```bash
 $ git clone git@github.com:R3J3CT3D/EncryPass-Desktop.git
@@ -57,6 +59,8 @@ Go into the cloned directory
 $ cd EncryPass-Desktop
 ```
 
+<br>
+
 ### Tests
 
 Run the project
@@ -64,10 +68,12 @@ Run the project
 $ sudo npm start
 ```
 
-To build, use **electron-packager**
-See documentation [here](https://github.com/electron-userland/electron-packager).
+<br>
 
 ### Builds
+
+To build, use **electron-packager**
+See documentation [here](https://github.com/electron-userland/electron-packager).
 
 ```bash
 $ electron-packager .
