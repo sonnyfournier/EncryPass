@@ -14,7 +14,11 @@ form {
     margin-right: auto;
     border: 1px solid #cccccc;
     background-color: #FDFDFD;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
+}
+
+#copiedPopUp {
+	margin-top: 10px;
 }
 
 input[type=submit] {
@@ -79,7 +83,7 @@ input[type=text], input[type=password] {
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: center;
-    pointer-events: none;
+	outline-style: none;
 }
 
 .input-group.prev-input-group .form-control+span #usernameButton {
@@ -103,7 +107,7 @@ input[type=text], input[type=password] {
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: center;
-    pointer-events: none;
+	outline-style: none;
 }
 
 .input-group.prev-input-group .form-control:focus {
@@ -123,10 +127,11 @@ input[type=text], input[type=password] {
 }
 
 .input-group.prev-input-group .form-control:focus+.input-group-btn #passwordButton {
-    background-image: url("../ressources/images/glyphicons/unlockFocus.png");
+    background-image: url("../ressources/images/glyphicons/eyeFocus.png");
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: center;
+	outline-style: none;
 }
 
 .input-group.prev-input-group .form-control:focus+.input-group-btn #usernameButton {
