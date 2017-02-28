@@ -7,9 +7,8 @@
 **  ╚═╝  ╚═╝ ╚═════╝   ╚════╝  ╚═════╝   ╚═════╝    ╚═╝    ╚═════╝  ╚═════╝
 */
 
-const electron = require('electron')
-const app = electron.app
-const BrowserWindow = electron.BrowserWindow
+const electron = require('electron');
+const {app, BrowserWindow} = electron
 
 const path = require('path')
 const url = require('url')
