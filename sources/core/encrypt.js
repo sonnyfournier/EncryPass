@@ -8,14 +8,13 @@
 */
 
 // Comments are coming soon
+function 	encryptPassword(form) {
 
-function encryptPassword(form) {
-
-    var res 		= 0;
-	var newPass		= "";
-    var service 	= form.serviceInput.value;
-    var username 	= form.usernameInput.value;
-    var password	= form.passwordInput.value;
+    var 	res      = 0;
+    var 	newPass  = "";
+    var 	service  = form.serviceInput.value;
+    var 	username = form.usernameInput.value;
+    var 	password = form.passwordInput.value;
 
     if (service) {
         if (username) {
