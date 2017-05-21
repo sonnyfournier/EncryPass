@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/R3J3CT3D/EncryPass-Desktop"><img src="" alt="EncryPass" width="180" style= "margin-bottom: 1rem"></a>
+  <a href="https://github.com/R3J3CT3D/EncryPass-Desktop"><img src="https://github.com/R3J3CT3D/EncryPass-Desktop/blob/electron/ressources/images/icon.png" alt="EncryPass" width="180" style= "margin-bottom: 1rem"></a>
   <br>
   EncryPass
   <br>
