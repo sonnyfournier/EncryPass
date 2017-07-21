@@ -33,6 +33,12 @@ input[type=submit] {
     border: none;
 }
 
+.generateButtonHolder {
+		display:block;
+  	margin-left:auto;
+  	margin-right:auto;
+}
+
 input[type=text], input[type=password] {
     height: 40px !important;
 }
