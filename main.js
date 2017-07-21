@@ -29,7 +29,7 @@ function createWindow() {
     mainWindow.setMenu(null);
 
     mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'sources/static/index.html'),
+        pathname: path.join(__dirname, 'index.html'),
         protocol: 'file:',
         slashes: true
     }))

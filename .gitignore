@@ -4,3 +4,5 @@ EncryPass-*
 # Complements
 node_modules
 bootstrap
+dist
+*.back

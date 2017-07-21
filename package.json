@@ -1,22 +1,33 @@
 {
-  "name": "EncryPass",
-  "version": "1.0.1",
-  "description": "Change your password with the same.",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": "https://github.com/R3J3CT3D/EncryPass",
-  "keywords": [
-    "EncryPass",
-    "password",
-    "generator",
-    "same",
-    "different"
-  ],
-  "author": "R3J3CT3D",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "^1.4.1"
-  }
+    "name": "EncryPass",
+    "version": "1.0.2",
+    "description": "Change your password with the same.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": "https://github.com/R3J3CT3D/EncryPass",
+    "keywords": [
+        "EncryPass",
+        "password",
+        "generator",
+        "same",
+        "different"
+    ],
+    "author": "R3J3CT3D",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^1.4.1",
+        "electron-builder": "^14.5.3"
+    },
+    "build": {
+        "appId": "r3j3ct3d.encrypass",
+        "mac": {
+            "category": "your.app.category.type"
+        }
+    },
+    "scripts": {
+        "pack": "build --dir",
+		"dist": "build"
+    }
 }
