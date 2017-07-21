@@ -33,14 +33,23 @@ HTMLElement.prototype.changeValueDetection = function() {
     }, 100);
 };
 
+/*
+		// Get the new password button
+		var newButton = document.querySelectorAll(".input-group.prev-input-group .form-control+span #newButton")
+
+		// Change background image of password button with a clipboard image
+		newButton[0].style.backgroundImage = "url('../../ressources/images/glyphicons/copy.png')";
+});
+*/
+
 // Set an inital observer
 document.getElementById("newInput").changeValueDetection();
 
 document.getElementById("newInput").addEventListener("changeValueDetection", function() {
 
-	// Get the new password button
-	var newButton = document.querySelectorAll(".input-group.prev-input-group .form-control+span #newButton")
+		// Get the new password button
+		var newButton = document.querySelectorAll(".input-group.prev-input-group .form-control+span #newButton")
 
-	// Change background image of password button with a clipboard image
-	newButton[0].style.backgroundImage = "url('../../ressources/images/glyphicons/copy.png')";
+		// Change background image of password button with a clipboard image
+		newButton[0].style.backgroundImage = "url('../../ressources/images/glyphicons/copy.png')";
 });
