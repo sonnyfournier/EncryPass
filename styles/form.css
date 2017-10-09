@@ -24,6 +24,7 @@ form {
 input[type=submit] {
     margin-top: 45px;
     margin-bottom: 15px;
+    margin-left: 75%;
     width: 105px;
     height: 105px;
     border-radius: 50%;
@@ -33,8 +34,14 @@ input[type=submit] {
     border: none;
 }
 
+@media screen and (max-width: 767px) {
+    input[type=submit] {
+        margin-left: auto;
+    }
+}
+
 .generateButtonHolder {
-		display:block;
+	display:block;
   	margin-left:auto;
   	margin-right:auto;
 }
