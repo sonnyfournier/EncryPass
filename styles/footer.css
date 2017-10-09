@@ -7,14 +7,11 @@
 **  ╚═╝  ╚═╝ ╚═════╝   ╚════╝  ╚═════╝   ╚═════╝    ╚═╝    ╚═════╝  ╚═════╝
 */
 
-footer {
-    position: absolute;
-	left: 0;
-	right: 0;
-    bottom: 0;
+.footer {
+    margin-top: 10px;
     text-align: center;
 }
 
-footer #heart {
+.footer #heart {
     color: #EF574B;
 }
