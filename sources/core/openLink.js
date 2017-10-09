@@ -9,7 +9,8 @@
 
 function openLink(url) {
   
-    var open = require("open");
-    open(url);
+    const {shell} = require('electron')
+    
+    shell.openExternal(url);
 }
   
