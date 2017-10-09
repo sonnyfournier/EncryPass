@@ -7,20 +7,9 @@
 **  ╚═╝  ╚═╝ ╚═════╝   ╚════╝  ╚═════╝   ╚═════╝    ╚═╝    ╚═════╝  ╚═════╝
 */
 
-.footer {
-    margin-top: 10px;
-    text-align: center;
+function openLink(url) {
+  
+    var open = require("open");
+    open(url);
 }
-
-.footer #heart {
-    color: #EF574B;
-}
-
-.footer a {
-    color: #EF574B;
-}
-
-.footer a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
+  
