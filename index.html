@@ -68,12 +68,12 @@
 
 						<!-- Generate button -->
 						<div id="generateButtonHolder">
-							<input type="submit" value="" id="generateButton" onClick="return encryptPassword(this.form)" tabindex="-1"/>
+							<input type="submit" value="" id="generateButton" onClick="return encryptPassword(this.form)" tabindex="-1" />
 						</div>
 
 						<!-- New password field -->
 						<div class="input-group prev-input-group">
-							<input type="text" class="form-control" placeholder="New password" id="newInput" tabindex=4 >
+							<input type="text" class="form-control" placeholder="New password" id="newInput" tabindex=4>
 							<span class="input-group-btn">
 								<button id="newButton" class="btn btn-default" type="button" tabindex="-1" onclick="copyToClipboard();" ></button>
 							</span>
@@ -89,11 +89,9 @@
 </body>
 
 <script type="text/javascript">
-
-	var 	copiedMessage = document.getElementById("copiedPopUp");
+	var copiedMessage = document.getElementById("copiedPopUp");
 
 	copiedMessage.style.visibility = 'hidden';
-
 </script>
 
 <script type="text/javascript" src="sources/core/openLink.js"></script>
