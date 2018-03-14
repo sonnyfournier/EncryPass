@@ -22,10 +22,11 @@ to keep the same password but always different.
 - [Story](#story)
 - [Downloads](#downloads)
 - [Build](#build)
-    - [Tests](#tests)
-    - [Build](#builds)
+    - [Tests](#test)
+    - [Build](#build)
 - [Screenshots](#sreens)
 - [Status](#status)
+- [Dependencies](#dependencies)
 - [Contributors](#contributors)
 
 <br>
@@ -51,33 +52,35 @@ If you want, you can also build EncryPass directly from source.
 
 <br>
 
-First, clone the repository
+* First, clone the repository
 ```bash
 $ git clone git@github.com:R3J3CT3D/EncryPass-Desktop.git
 ```
-Go into the cloned directory
+* Go into the cloned directory
 ```bash
 $ cd EncryPass-Desktop
 ```
-
-<br>
-
-### Tests
-
-Run the project
+* Install dependencies
 ```bash
-$ sudo npm start
+$ yarn install
 ```
 
 <br>
 
-### Builds
+### Test
 
-To build, use **electron-packager**
-See documentation [here](https://github.com/electron-userland/electron-packager).
-
+* Run the project
 ```bash
-$ electron-packager .
+$ yarn run start
+```
+
+<br>
+
+### Build
+
+* Or build application (only windows for the moment)
+```bash
+$ yarn dist
 ```
 
 <br>
@@ -97,6 +100,13 @@ But I work on it everyday.
 If you have any suggestions then please open an issue!
 
 <br/>
+
+## Dependencies
+* [Bootstrap](https://github.com/twbs/bootstrap) - The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
+* [SweetAlert2](https://github.com/sweetalert2/sweetalert2) - A beautiful, responsive, highly customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies.
+* [OpenURL](https://github.com/rauschma/openurl) - Node.js module for opening a URL via the operating system.
+
+<br>
 
 ## Contributors
 Salah
