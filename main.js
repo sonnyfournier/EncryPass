@@ -26,13 +26,13 @@ function createWindow() {
     toolbar: false,
     'minHeight': 775,
     'minWidth': 440,
-    icon: path.join(__dirname, 'ressources/images/icon.png')
+    icon: path.join(__dirname, 'images/icon.png')
   })
 
   mainWindow.setMenu(null);
 
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'sources/index.html'),
+    pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
     slashes: true
   }))

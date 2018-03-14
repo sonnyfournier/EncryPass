@@ -9,29 +9,27 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 
-	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="../styles/bootstrap.min.css" />
-	<link rel="stylesheet" href="../styles/bootstrapOverload.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrapOverload.css" />
 
-	<link rel="stylesheet" href="../styles/header.css" />
+	<link rel="stylesheet" href="css/body.css" />
+	<link rel="stylesheet" href="css/form.css" />
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" href="css/footer.css" />
 
-	<link rel="stylesheet" href="../styles/body.css" />
-	<link rel="stylesheet" href="../styles/form.css" />
-
-	<link rel="stylesheet" href="../styles/footer.css" />
-
-	<script src="core/encrypt.js"></script>
+	<script src="js/encrypt.js"></script>
+	<script src="js/openLink.js"></script>
+	<script src="js/clipboard.js"></script>
+	<script src="js/changeInputType.js"></script>
+	<script src="js/changeDetection.js"></script>
 
 	<title>EncryPass</title>
 </head>
-
-<header>
-</header>
 
 <body>
 
@@ -43,7 +41,7 @@
 
 			<div id="header-settings-button">
 				<a href="" onclick="openSettingsWindow()">
-					<img border="0" src="../ressources/images/glyphicons/settings.png">
+					<img border="0" src="images/glyphicons/settings.png">
 				</a>
 			</div>
 		</div>
@@ -119,7 +117,7 @@
 			movable: true,
 			toolbar: false
 		});
-		win.loadURL('file://' + __dirname + '/settings.html');
+		win.loadURL('file://' + __dirname + '/sources/settings.html');
 
 		win.setMenu(null);
 
@@ -128,10 +126,5 @@
 		})
 	}
 </script>
-
-<script src="core/openLink.js"></script>
-<script src="core/clipboard.js"></script>
-<script src="core/changeInputType.js"></script>
-<script src="core/changeDetection.js"></script>
 
 </html>

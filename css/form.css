@@ -29,7 +29,7 @@ input[type=submit] {
   width: 105px;
   height: 105px;
   border-radius: 50%;
-  background-image: url("../ressources/images/icon.png");
+  background-image: url("../images/icon.png");
   background-size: cover;
   outline-style: none;
   border: none;
@@ -94,7 +94,7 @@ input[type=text], input[type=password] {
 }
 
 .input-group.prev-input-group .form-control+span #passwordButton {
-  background-image: url("../ressources/images/glyphicons/unlock.png");
+  background-image: url("../images/glyphicons/unlock.png");
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;
@@ -102,7 +102,7 @@ input[type=text], input[type=password] {
 }
 
 .input-group.prev-input-group .form-control+span #usernameButton {
-  background-image: url("../ressources/images/glyphicons/user.png");
+  background-image: url("../images/glyphicons/user.png");
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;
@@ -110,7 +110,7 @@ input[type=text], input[type=password] {
 }
 
 .input-group.prev-input-group .form-control+span #serviceButton {
-  background-image: url("../ressources/images/glyphicons/cloud.png");
+  background-image: url("../images/glyphicons/cloud.png");
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;
@@ -118,7 +118,7 @@ input[type=text], input[type=password] {
 }
 
 .input-group.prev-input-group .form-control+span #newButton {
-  background-image: url("../ressources/images/glyphicons/lock.png");
+  background-image: url("../images/glyphicons/lock.png");
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;
@@ -142,7 +142,7 @@ input[type=text], input[type=password] {
 }
 
 .input-group.prev-input-group .form-control:focus+.input-group-btn #passwordButton {
-  background-image: url("../ressources/images/glyphicons/eyeFocus.png");
+  background-image: url("../images/glyphicons/eyeFocus.png");
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;
@@ -150,21 +150,21 @@ input[type=text], input[type=password] {
 }
 
 .input-group.prev-input-group .form-control:focus+.input-group-btn #usernameButton {
-  background-image: url("../ressources/images/glyphicons/userFocus.png");
+  background-image: url("../images/glyphicons/userFocus.png");
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;
 }
 
 .input-group.prev-input-group .form-control:focus+.input-group-btn #serviceButton {
-  background-image: url("../ressources/images/glyphicons/cloudFocus.png");
+  background-image: url("../images/glyphicons/cloudFocus.png");
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;
 }
 
 .input-group.prev-input-group .form-control:focus+.input-group-btn #newButton {
-  background-image: url("../ressources/images/glyphicons/lockFocus.png");
+  background-image: url("../images/glyphicons/lockFocus.png");
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;
