@@ -1,0 +1,221 @@
+/*
+**  ██████╗  ██████╗       ██╗ ██████╗   ██████╗ ████████╗ ██████╗  ██████╗
+**  ██╔══██╗ ╚════██╗      ██║ ╚════██╗ ██╔════╝ ╚══██╔══╝ ╚════██╗ ██╔══██╗
+**  ██████╔╝  █████╔╝      ██║  █████╔╝ ██║         ██║     █████╔╝ ██║  ██║
+**  ██╔══██╗  ╚═══██╗ ██   ██║  ╚═══██╗ ██║         ██║     ╚═══██╗ ██║  ██║
+**  ██║  ██║ ██████╔╝ ╚█████╔╝ ██████╔╝ ╚██████╗    ██║    ██████╔╝ ██████╔╝
+**  ╚═╝  ╚═╝ ╚═════╝   ╚════╝  ╚═════╝   ╚═════╝    ╚═╝    ╚═════╝  ╚═════╝
+*/
+
+#settings {
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #cccccc;
+  background-color: #FDFDFD;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section {
+  margin: 0 auto;
+}
+
+.toggle-button {
+  margin-bottom: 10px;
+}
+
+/*
+ * Toggle button styles
+ */
+
+.toggle-button {
+  position: relative;
+  display: inline-block;
+}
+
+.toggle-button label {
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: left;
+}
+
+.toggle-button input {
+  display: none;
+}
+
+.toggle-button__icon {
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.toggle-button__icon:before, .toggle-button__icon:after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  transition: 0.2s ease-out;
+}
+
+/*
+ * Toggle button variables
+ */
+
+/*
+ * Toggle button styles
+ */
+
+.toggle-button--aava label {
+  height: 50px;
+  line-height: 50px;
+  transition: all 0.2s;
+  border-radius: 2rem;
+  color: #FFF;
+}
+
+.toggle-button--aava label:before, .toggle-button--aava label:after {
+  position: absolute;
+  right: 1.5rem;
+  transition: all 0.2s .1s ease-out;
+}
+
+.toggle-button--aava label:before {
+  content: attr(data-on-text);
+}
+
+.toggle-button--aava label:after {
+  content: attr(data-off-text);
+  color: #EF574B;
+}
+
+.toggle-button--aava input[type=checkbox]+label {
+  width: 350px;
+  background: #F5F5F5;
+}
+
+.toggle-button--aava input[type=checkbox]+label:before {
+  opacity: 0;
+  transform: translate(0, 20px);
+}
+
+.toggle-button--aava input[type=checkbox]+label:after {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.toggle-button--aava input[type=checkbox]:checked~label {
+  width: 350px;
+  background: #EF574B;
+}
+
+.toggle-button--aava input[type=checkbox]:checked~label:before {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.toggle-button--aava input[type=checkbox]:checked~label:after {
+  opacity: 0;
+  transform: translate(0, -20px);
+}
+
+.toggle-button--aava input[type=checkbox]:checked~.toggle-button__icon:before {
+  transform: translate(-10%, 100%) rotate(45deg);
+  width: 16.66667px;
+  background: #FDFDFD;
+}
+
+.toggle-button--aava input[type=checkbox]:checked~.toggle-button__icon:after {
+  transform: translate(30%) rotate(-45deg);
+  background: #FDFDFD;
+}
+
+.toggle-button--aava .toggle-button__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+}
+
+.toggle-button--aava .toggle-button__icon:before, .toggle-button--aava .toggle-button__icon:after {
+  height: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button--aava .toggle-button__icon:before {
+  width: 25px;
+  transform: rotate(45deg);
+  background: #EF574B;
+}
+
+.toggle-button--aava .toggle-button__icon:after {
+  width: 25px;
+  transform: rotate(-45deg);
+  background: #EF574B;
+}
+
+.settings-text {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+#password-length-picker {
+  width: 350px;
+  margin-bottom: 25px;
+}
+
+#password-length {
+  width: 270px;
+}
+
+#password-length:focus {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #cccccc;
+  border-bottom: 2px solid #EF574B;
+}
+
+@media ( max-width: 350px) {
+  .input-group span.input-group-btn, .input-group input, .input-group button {
+    display: block;
+    border-radius: 0;
+    margin: 0;
+  }
+  .input-group {
+    position: relative;
+  }
+  .input-group span.data-up {
+    position: absolute;
+    top: 0;
+  }
+  .input-group span.data-dwn {
+    position: absolute;
+    bottom: 0;
+  }
+  .form-control.text-center {}
+  .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    margin-left: 0;
+  }
+}
+
+#add-length-button {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  background: #EF574B;
+  border: none;
+}
+
+#remove-length-button {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  text-align: center;
+  background: #EF574B;
+  border: none;
+}

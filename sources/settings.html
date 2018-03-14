@@ -1,0 +1,82 @@
+<!--
+!!  ██████╗  ██████╗       ██╗ ██████╗   ██████╗ ████████╗ ██████╗  ██████╗
+!!  ██╔══██╗ ╚════██╗      ██║ ╚════██╗ ██╔════╝ ╚══██╔══╝ ╚════██╗ ██╔══██╗
+!!  ██████╔╝  █████╔╝      ██║  █████╔╝ ██║         ██║     █████╔╝ ██║  ██║
+!!  ██╔══██╗  ╚═══██╗ ██   ██║  ╚═══██╗ ██║         ██║     ╚═══██╗ ██║  ██║
+!!  ██║  ██║ ██████╔╝ ╚█████╔╝ ██████╔╝ ╚██████╗    ██║    ██████╔╝ ██████╔╝
+!!  ╚═╝  ╚═╝ ╚═════╝   ╚════╝  ╚═════╝   ╚═════╝    ╚═╝    ╚═════╝  ╚═════╝
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="../styles/bootstrap.min.css" />
+	<link rel="stylesheet" href="../styles/bootstrapOverload.css" />
+
+	<link rel="stylesheet" href="../styles/body.css" />
+	<link rel="stylesheet" href="../styles/form.css" />
+	<link rel="stylesheet" href="../styles/header.css" />
+	<link rel="stylesheet" href="../styles/footer.css" />
+	<link rel="stylesheet" href="../styles/settings.css" />
+
+	<title>Settings</title>
+</head>
+
+<header>
+</header>
+
+<body>
+	<div id="app">
+
+		<div id="header">
+			<h1>Settings</h1>
+			<p>Change password generation</p>
+		</div>
+
+		<div id="settings">
+
+			<p class="settings-text">Generated password length</p>
+
+			<div id="password-length-picker">
+				<div class="row">
+					<div class="input-group number-spinner">
+						<span class="input-group-btn data-dwn">
+					<button id="remove-length-button" class="btn btn-default btn-info" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+						</span>
+
+						<input id="password-length" type="text" onblur="checkValidPasswordLength()" class="form-control text-center" value="1" min="1" max="40">
+
+						<span class="input-group-btn data-up">
+					<button id="add-length-button" class="btn btn-default btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<p class="settings-text">Caracters generation rules</p>
+
+			<section class="section section--aava">
+				<div class="toggle-button toggle-button--aava">
+					<input id="toggleButton" type="checkbox">
+					<label for="toggleButton" data-on-text="Numbers allowed" data-off-text="Numbers not allowed"></label>
+					<div class="toggle-button__icon"></div>
+				</div>
+				<div class="toggle-button toggle-button--aava">
+					<input id="toggleButton2" type="checkbox">
+					<label for="toggleButton2" data-on-text="Specials caracters allowed" data-off-text="Specials caracters not allowed"></label>
+					<div class="toggle-button__icon"></div>
+				</div>
+			</section>
+
+		</div>
+		<p class="footer">Made with <span id="heart">❤</span> by {<a onclick="openLink('https://github.com/R3J3CT3D');">R3J3CT3D</a>}</p>
+	</div>
+</body>
+
+<script src="core/openLink.js"></script>
+<script src="core/changePasswordLength.js"></script>
+
+</html>

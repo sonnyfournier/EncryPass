@@ -1,0 +1,137 @@
+<!--
+!!  ██████╗  ██████╗       ██╗ ██████╗   ██████╗ ████████╗ ██████╗  ██████╗
+!!  ██╔══██╗ ╚════██╗      ██║ ╚════██╗ ██╔════╝ ╚══██╔══╝ ╚════██╗ ██╔══██╗
+!!  ██████╔╝  █████╔╝      ██║  █████╔╝ ██║         ██║     █████╔╝ ██║  ██║
+!!  ██╔══██╗  ╚═══██╗ ██   ██║  ╚═══██╗ ██║         ██║     ╚═══██╗ ██║  ██║
+!!  ██║  ██║ ██████╔╝ ╚█████╔╝ ██████╔╝ ╚██████╗    ██║    ██████╔╝ ██████╔╝
+!!  ╚═╝  ╚═╝ ╚═════╝   ╚════╝  ╚═════╝   ╚═════╝    ╚═╝    ╚═════╝  ╚═════╝
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="../styles/bootstrap.min.css" />
+	<link rel="stylesheet" href="../styles/bootstrapOverload.css" />
+
+	<link rel="stylesheet" href="../styles/header.css" />
+
+	<link rel="stylesheet" href="../styles/body.css" />
+	<link rel="stylesheet" href="../styles/form.css" />
+
+	<link rel="stylesheet" href="../styles/footer.css" />
+
+	<script src="core/encrypt.js"></script>
+
+	<title>EncryPass</title>
+</head>
+
+<header>
+</header>
+
+<body>
+
+	<div id="app">
+
+		<div id="header">
+			<h1>EncryPass</h1>
+			<p>Change your password with the same.</p>
+
+			<div id="header-settings-button">
+				<a href="" onclick="openSettingsWindow()">
+					<img border="0" src="../ressources/images/glyphicons/settings.png">
+				</a>
+			</div>
+		</div>
+
+		<form name="encryptForm" action="">
+			<div class="bootstrap-iso">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+
+							<div class="input-group prev-input-group">
+								<input type="text" class="form-control" placeholder="Service's name" id="serviceInput" autofocus tabindex=1>
+								<span class="input-group-btn">
+								<button id="serviceButton" class="btn btn-default" type="button" tabindex="-1"></button>
+							</span>
+							</div>
+
+							<div class="input-group prev-input-group">
+								<input type="text" class="form-control" placeholder="Username (optional)" id="usernameInput" tabindex=2>
+								<span class="input-group-btn">
+								<button id="usernameButton" class="btn btn-default" type="button" tabindex="-1"></button>
+							</span>
+							</div>
+
+							<div class="input-group prev-input-group">
+								<input type="password" class="form-control" placeholder="Password" id="passwordInput" tabindex=3>
+								<span class="input-group-btn">
+								<button id="passwordButton" class="btn btn-default" type="button" tabindex="-1"></button>
+							</span>
+							</div>
+
+							<div id="generateButtonHolder">
+								<input type="submit" value="" id="generateButton" onClick="return encryptPassword(this.form)" tabindex="-1" />
+							</div>
+
+							<div class="input-group prev-input-group">
+								<input type="text" class="form-control" placeholder="New password" id="newInput" tabindex=4>
+								<span class="input-group-btn">
+								<button id="newButton" class="btn btn-default" type="button" tabindex="-1" onclick="copyToClipboard();" ></button>
+							</span>
+								<p id="copiedPopUp">Copied !</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<p class="footer">Made with <span id="heart">❤</span> by {<a onclick="openLink('https://github.com/R3J3CT3D');">R3J3CT3D</a>}</p>
+
+	</div>
+
+</body>
+
+<script>
+	var copiedMessage = document.getElementById("copiedPopUp");
+
+	copiedMessage.style.visibility = 'hidden';
+</script>
+
+<script>
+	function openSettingsWindow() {
+
+		const remote = require('electron').remote;
+		const BrowserWindow = remote.BrowserWindow;
+
+		var win = new BrowserWindow({
+			width: 450,
+			height: 605,
+			minWidth: 450,
+			minHeight: 605,
+			movable: true,
+			toolbar: false
+		});
+		win.loadURL('file://' + __dirname + '/settings.html');
+
+		win.setMenu(null);
+
+		settingsWindow.on('closed', function() {
+			mainWindow = null
+		})
+	}
+</script>
+
+<script src="core/openLink.js"></script>
+<script src="core/clipboard.js"></script>
+<script src="core/changeInputType.js"></script>
+<script src="core/changeDetection.js"></script>
+
+</html>

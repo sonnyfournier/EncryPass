@@ -20,19 +20,19 @@ let mainWindow
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 400,
-    height: 715,
+    width: 440,
+    height: 775,
     movable: true,
     toolbar: false,
-    resizable: false,
-    maximizable: false,
+    'minHeight': 775,
+    'minWidth': 440,
     icon: path.join(__dirname, 'ressources/images/icon.png')
   })
 
   mainWindow.setMenu(null);
 
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, 'sources/index.html'),
     protocol: 'file:',
     slashes: true
   }))

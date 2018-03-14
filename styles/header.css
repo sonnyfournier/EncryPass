@@ -7,19 +7,30 @@
 **  ╚═╝  ╚═╝ ╚═════╝   ╚════╝  ╚═════╝   ╚═════╝    ╚═╝    ╚═════╝  ╚═════╝
 */
 
-header {
-    text-align: center;
+#header {
+  text-align: center;
 }
 
-header h1 {
-    color: #4C4C4C;
-    font-size: 40px;
-    margin-top: 40px;
-	font-weight: bold;
+#header h1 {
+  color: #4C4C4C;
+  font-size: 40px;
+  font-weight: bold;
 }
 
-header p {
-    color: #EF574B;
-    font-size: 13px;
-    margin-bottom: 25px;
+#header p {
+  color: #EF574B;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+#header-settings-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+#header-settings-button img {
+  width: 100%;
 }
