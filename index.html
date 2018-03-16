@@ -104,24 +104,30 @@
 <script>
 	function openSettingsWindow() {
 
-		const remote = require('electron').remote;
-		const BrowserWindow = remote.BrowserWindow;
+		if (isElectron()) {
 
-		var win = new BrowserWindow({
-			width: 450,
-			height: 605,
-			minWidth: 450,
-			minHeight: 605,
-			movable: true,
-			toolbar: false
-		});
-		win.loadURL('file://' + __dirname + '/sources/settings.html');
+			const remote = require('electron').remote;
+			const BrowserWindow = remote.BrowserWindow;
 
-		win.setMenu(null);
+			var win = new BrowserWindow({
+				width: 450,
+				height: 605,
+				minWidth: 450,
+				minHeight: 605,
+				movable: true,
+				toolbar: false
+			});
+			win.loadURL('file://' + __dirname + '/sources/settings.html');
 
-		settingsWindow.on('closed', function() {
-			mainWindow = null
-		})
+			win.setMenu(null);
+
+			settingsWindow.on('closed', function() {
+				mainWindow = null
+			})
+		}
+		else {
+		    window.open('sources/settings.html');
+		}
 	}
 </script>
 
