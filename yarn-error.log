@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install electron-cookies
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js electron-cookies
 
 PATH: 
   C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Maven\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files (x86)\Yarn\bin\;C:\Users\God\AppData\Local\Microsoft\WindowsApps;C:\Users\God\AppData\Local\atom\bin;C:\Users\God\AppData\Roaming\npm;C:\Program Files (x86)\Epitech\Blih\;C:\Users\God\AppData\Local\Yarn\bin
@@ -48,6 +48,7 @@ npm manifest:
     },
     "dependencies": {
       "bootstrap": "^4.0.0",
+      "electron-cookies": "^1.1.0",
       "jquery": "^3.3.1",
       "openurl": "^1.1.1",
       "popper.js": "^1.14.1",
@@ -697,6 +698,10 @@ Lockfile:
       update-notifier "^2.3.0"
       yargs "^11.0.0"
   
+  electron-cookies@^1.1.0:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/electron-cookies/-/electron-cookies-1.1.0.tgz#7935a82fd0e0e883d981935d5e64b6dd302f4315"
+  
   electron-download-tf@4.3.4:
     version "4.3.4"
     resolved "https://registry.yarnpkg.com/electron-download-tf/-/electron-download-tf-4.3.4.tgz#b03740b2885aa2ad3f8784fae74df427f66d5165"
@@ -807,9 +812,9 @@ Lockfile:
       lodash.template "^4.2.2"
       temp "^0.8.3"
   
-  electron@1.7.8:
-    version "1.7.8"
-    resolved "https://registry.yarnpkg.com/electron/-/electron-1.7.8.tgz#27b791a6895171a7d52991b99442cdbd10a3539d"
+  electron@1.7.11:
+    version "1.7.11"
+    resolved "https://registry.yarnpkg.com/electron/-/electron-1.7.11.tgz#993b6aa79e0e79a7cfcc369f4c813fbd9a0b08d9"
     dependencies:
       "@types/node" "^7.0.18"
       electron-download "^3.0.1"
@@ -2281,9 +2286,14 @@ Lockfile:
       fd-slicer "~1.0.1"
 
 Trace: 
-  Error: `install` has been replaced with `add` to add new dependencies. Run "yarn add electron-cookies" instead.
+  Error: Command "electron-cookies" not found.
       at new MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
-      at Object.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:21987:13)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:87307:17
       at Generator.next (<anonymous>)
       at step (C:\Program Files (x86)\Yarn\lib\cli.js:98:30)
-      at C:\Program Files (x86)\Yarn\lib\cli.js:109:13
+      at C:\Program Files (x86)\Yarn\lib\cli.js:116:14
+      at F (C:\Program Files (x86)\Yarn\lib\cli.js:23451:28)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:95:12
+      at runCommand (C:\Program Files (x86)\Yarn\lib\cli.js:87312:22)
+      at Object.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:87412:14)
+      at Generator.next (<anonymous>)

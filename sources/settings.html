@@ -39,7 +39,8 @@
 
 		<div id="settings">
 
-			<a onclick="test()">TEST</a>
+			<button onclick="setCookie('data','name')">Set Cookie</button>
+			<button onclick="getCookie('name')">Get Cookie</button>
 
 			<p class="settings-text">Generated password length</p>
 
@@ -81,17 +82,28 @@
 
 <script>
 
+var session = require('electron').remote.session;
+var ses = session.fromPartition('persist:name');
+require('electron-cookies');
+
+function setCookie(data, name) {
+
+	const cookie = {url: 'https://r3j3ct3d.github.io/EncryPass-Desktop/', name: 'name', value: 'value'}
+	session.defaultSession.cookies.set(cookie, (error) => {
+		if (error) console.error(error)
+	})
+}
+
+		function getCookie(name) {
+
+			session.defaultSession.cookies.get({url: 'https://r3j3ct3d.github.io/EncryPass-Desktop/'}, (error, cookies) => {
+				console.log(error, cookies)
+	})
+}
+
 function test() {
-
-	require('electron-cookies');
-
-	var expires = "";
-	 if (days) {
-			 var date = new Date();
-			 date.setTime(date.getTime() + (days*24*60*60*1000));
-			 expires = "; expires=" + date.toUTCString();
-	 }
-	 document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+	var x = getCookie('NAME');
+	alert(x);
 }
 
 </script>
