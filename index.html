@@ -109,14 +109,17 @@
 			const remote = require('electron').remote;
 			const BrowserWindow = remote.BrowserWindow;
 
-			var win = new BrowserWindow({
+			let win = new remote.BrowserWindow({
+    		parent: remote.getCurrentWindow(),
+    		modal: true,
 				width: 450,
 				height: 605,
 				minWidth: 450,
 				minHeight: 605,
 				movable: true,
 				toolbar: false
-			});
+  		})
+
 			win.loadURL('file://' + __dirname + '/sources/settings.html');
 
 			win.setMenu(null);
