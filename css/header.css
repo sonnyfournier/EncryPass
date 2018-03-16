@@ -34,3 +34,7 @@
 #header-settings-button img {
   width: 100%;
 }
+
+#header-settings-button:hover {
+  cursor: pointer;
+}

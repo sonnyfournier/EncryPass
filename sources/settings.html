@@ -29,9 +29,6 @@
 	<title>Settings</title>
 </head>
 
-<header>
-</header>
-
 <body>
 	<div id="app">
 
@@ -41,6 +38,8 @@
 		</div>
 
 		<div id="settings">
+
+			<a onclick="test()">TEST</a>
 
 			<p class="settings-text">Generated password length</p>
 
@@ -79,6 +78,23 @@
 		<p class="footer">Made with <span id="heart">❤</span> by {<a onclick="openLink('https://github.com/R3J3CT3D');">R3J3CT3D</a>}</p>
 	</div>
 </body>
+
+<script>
+
+function test() {
+
+	require('electron-cookies');
+
+	var expires = "";
+	 if (days) {
+			 var date = new Date();
+			 date.setTime(date.getTime() + (days*24*60*60*1000));
+			 expires = "; expires=" + date.toUTCString();
+	 }
+	 document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+
+</script>
 
 <script src="../js/changePasswordLength.js"></script>
 

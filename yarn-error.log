@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js dist
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install electron-cookies
 
 PATH: 
-  C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Maven\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files (x86)\Yarn\bin\;C:\Users\God\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\God\AppData\Local\atom\bin;C:\Users\God\AppData\Roaming\npm;C:\Program Files (x86)\Epitech\Blih\;C:\Users\God\AppData\Local\Yarn\bin
+  C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Maven\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files (x86)\Yarn\bin\;C:\Users\God\AppData\Local\Microsoft\WindowsApps;C:\Users\God\AppData\Local\atom\bin;C:\Users\God\AppData\Roaming\npm;C:\Program Files (x86)\Epitech\Blih\;C:\Users\God\AppData\Local\Yarn\bin
 
 Yarn version: 
   1.5.1
@@ -20,9 +20,8 @@ npm manifest:
     "description": "Change your password with the same.",
     "main": "main.js",
     "scripts": {
-      "pack": "build --dir",
-      "dist": "build",
-      "start": "electron ."
+      "start": "electron .",
+      "dist": "build"
     },
     "repository": "https://github.com/R3J3CT3D/EncryPass",
     "keywords": [
@@ -35,7 +34,7 @@ npm manifest:
     "author": "R3J3CT3D",
     "license": "CC0-1.0",
     "devDependencies": {
-      "electron": "1.7.8",
+      "electron": "1.7.11",
       "electron-builder": "^20.4.1",
       "electron-packager": "^9.1.0",
       "electron-winstaller": "^2.6.3"
@@ -47,14 +46,11 @@ npm manifest:
         "icon": "build/icon.ico"
       }
     },
-    "scripts": {
-      "start": "electron .",
-      "dist": "build"
-    },
     "dependencies": {
       "bootstrap": "^4.0.0",
       "jquery": "^3.3.1",
       "openurl": "^1.1.1",
+      "popper.js": "^1.14.1",
       "sweetalert2": "^7.15.1"
     }
   }
@@ -1643,6 +1639,10 @@ Lockfile:
       xmlbuilder "8.2.2"
       xmldom "0.1.x"
   
+  popper.js@^1.14.1:
+    version "1.14.1"
+    resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.1.tgz#b8815e5cda6f62fc2042e47618649f75866e6753"
+  
   prepend-http@^1.0.1:
     version "1.0.4"
     resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
@@ -2281,17 +2281,9 @@ Lockfile:
       fd-slicer "~1.0.1"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: C:\Windows\system32\cmd.exe
-  Arguments: /d /s /c build
-  Directory: C:\Users\God\Desktop\EncryPass-Desktop
-  Output:
-  
-      at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
-      at new ProcessTermError (C:\Program Files (x86)\Yarn\lib\cli.js:226:113)
-      at ChildProcess.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
-      at emitTwo (events.js:106:13)
-      at ChildProcess.emit (events.js:194:7)
-      at maybeClose (internal/child_process.js:899:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+  Error: `install` has been replaced with `add` to add new dependencies. Run "yarn add electron-cookies" instead.
+      at new MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at Object.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:21987:13)
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:98:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:109:13

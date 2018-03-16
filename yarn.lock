@@ -636,6 +636,10 @@ electron-builder@^20.4.1:
     update-notifier "^2.3.0"
     yargs "^11.0.0"
 
+electron-cookies@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/electron-cookies/-/electron-cookies-1.1.0.tgz#7935a82fd0e0e883d981935d5e64b6dd302f4315"
+
 electron-download-tf@4.3.4:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/electron-download-tf/-/electron-download-tf-4.3.4.tgz#b03740b2885aa2ad3f8784fae74df427f66d5165"
@@ -746,9 +750,9 @@ electron-winstaller@^2.6.3:
     lodash.template "^4.2.2"
     temp "^0.8.3"
 
-electron@1.7.8:
-  version "1.7.8"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-1.7.8.tgz#27b791a6895171a7d52991b99442cdbd10a3539d"
+electron@1.7.11:
+  version "1.7.11"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-1.7.11.tgz#993b6aa79e0e79a7cfcc369f4c813fbd9a0b08d9"
   dependencies:
     "@types/node" "^7.0.18"
     electron-download "^3.0.1"
