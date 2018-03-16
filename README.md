@@ -41,8 +41,8 @@ I always wanted to use a different password for each site, unfortunatly, I alway
 All prebuilt binaries for all major platforms are available under
 [releases](https://github.com/R3J3CT3D/EncryPass-Desktop/releases/latest).
 
-EncryPass is also available for [Android](https://github.com/R3J3CT3D/EncryPass-Android) and 
-for [IOS](https://github.com/R3J3CT3D/EncryPass-IOS).
+EncryPass is also available for [Android](https://github.com/R3J3CT3D/EncryPass-Android) and
+for [IOS](https://github.com/R3J3CT3D/EncryPass-IOS) (WIP).
 
 <br>
 
@@ -93,15 +93,8 @@ $ yarn dist
 
 <br>
 
-## Status
-This is the first version of EncryPass so currently the features are far away.
-But I work on it everyday.
-
-If you have any suggestions then please open an issue!
-
-<br/>
-
 ## Dependencies
+* [Elecron](https://github.com/electron/electron) - Build cross platform desktop apps with JavaScript, HTML, and CSS.
 * [Bootstrap](https://github.com/twbs/bootstrap) - The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 * [SweetAlert2](https://github.com/sweetalert2/sweetalert2) - A beautiful, responsive, highly customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies.
 * [OpenURL](https://github.com/rauschma/openurl) - Node.js module for opening a URL via the operating system.
