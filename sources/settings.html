@@ -84,21 +84,30 @@
 
 var session = require('electron').remote.session;
 var ses = session.fromPartition('persist:name');
-require('electron-cookies');
 
 function setCookie(data, name) {
+			var expiration = new Date();
+			var hour = expiration.getHours();
+			hour = hour + 6;
+			expiration.setHours(hour);
+			ses.cookies.set({
+					url: "https://r3j3ct3d.github.io/EncryPass-Desktop", //the url of the cookie.
+					name: name, // a name to identify it.
+					value: data, // the value that you want to save
+					expirationDate: expiration.getTime()
+			}, function(error) {
+					/*console.log(error);*/
+			});
+	}
 
-	const cookie = {url: 'https://r3j3ct3d.github.io/EncryPass-Desktop/', name: 'name', value: 'value'}
-	session.defaultSession.cookies.set(cookie, (error) => {
-		if (error) console.error(error)
-	})
-}
-
-		function getCookie(name) {
-
-			session.defaultSession.cookies.get({url: 'https://r3j3ct3d.github.io/EncryPass-Desktop/'}, (error, cookies) => {
-				console.log(error, cookies)
-	})
+	function getCookie(name) {
+        var value = {
+            name: name // the request must have this format to search the cookie.
+        };
+        ses.cookies.get(value, function(error, cookies) {
+            console.console.log(cookies[0].value); // the value saved on the cookie
+        });
+    }
 }
 
 function test() {
