@@ -87,8 +87,8 @@ $ yarn dist
 
 ## Screenshots
 <p align="center">
-  <img src="https://github.com/R3J3CT3D/EncryPass-Desktop/blob/master/images/EncryPassMockup1.png" alt="EncryPassMockup1" width="48%" style= "margin-bottom: 1rem">
-  <img src="https://github.com/R3J3CT3D/EncryPass-Desktop/blob/master/images/EncryPassMockup2.png" alt="EncryPassMockup2" width="48%" style= "margin-bottom: 1rem">
+  <img src="https://github.com/R3J3CT3D/EncryPass-Desktop/blob/master/images/EncryPassMockup1.png" alt="EncryPassMockup1" width="45%" style= "margin-bottom: 1rem">
+  <img src="https://github.com/R3J3CT3D/EncryPass-Desktop/blob/master/images/EncryPassMockup2.png" alt="EncryPassMockup2" width="45%" style= "margin-bottom: 1rem">
 </p>
 
 <br>
