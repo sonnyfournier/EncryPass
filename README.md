@@ -24,7 +24,7 @@ to keep the same password but always different.
 - [Build](#build)
     - [Tests](#test)
     - [Build](#build)
-- [Screenshots](#sreens)
+- [Screenshots](#sreenshots)
 - [Status](#status)
 - [Dependencies](#dependencies)
 - [Contributors](#contributors)
@@ -85,10 +85,9 @@ $ yarn dist
 
 <br>
 
-## Screens
+## Screenshots
 <p align="center">
-  <img src="lel.png?raw=true" alt="" width="100%">
-  <img src="lel.png?raw=true" alt="" width="40%">
+  <img src="https://github.com/R3J3CT3D/EncryPass-Desktop/blob/master/images/EncryPassMockup.jpg" alt="EncryPassMockup" width="50%" style= "margin-bottom: 1rem">
 </p>
 
 <br>
