@@ -6,3 +6,5 @@ node_modules
 bootstrap
 dist
 *.back
+yarn-error.log
+yarn.lock
